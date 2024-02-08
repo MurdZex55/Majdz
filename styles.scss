@@ -18,7 +18,8 @@ video {
     transform: scale(1.2);
     object-fit: cover;
    transition-duration: 1s;
-
+   
+  filter: brightness(-40px);
 }
     
 #mainbox {
@@ -40,6 +41,7 @@ video {
     transition: all 0.7s ease;
     display: none;
     transition: all 1.2s ease;
+    background-color: rgb(27, 26, 26,0.9);
     
     
 }
@@ -60,14 +62,19 @@ video {
   cursor: pointer;
   transition-duration: 1.2s;
   transition: all 1s ease;
-  background-color: rgb(240, 228, 228);
+  animation-name: pumping;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0px 0px 56px 11px rgba(248, 246, 246, 0.85);
   -webkit-box-shadow: 0px 0px 56px 11px rgba(243, 241, 241, 0.85);
   -moz-box-shadow: 0px 0px 56px 11px rgba(255, 255, 255, 0.85);
 }
-
+.initialblur{
+  filter: blur(4px);
+}
 .blurry {
-    filter: blur(10px); /* Apply blur effect */
+    filter: blur(15px); /* Apply blur effect */
     
   }
  .shadow {
@@ -86,7 +93,7 @@ video {
     letter-spacing: 2px;
     font-size: xx-large;
     
-    color: rgb(24, 26, 26);
+    color: rgb(255, 255, 255);
 }
 .ProfilePic{
  
@@ -111,7 +118,7 @@ p{
     font-weight: bold;
     font-family:'Array-Wide';
     letter-spacing: 1px;
-    font-size:85%;
+    font-size:55%;
     color: rgb(233, 238, 238);
     
 
@@ -119,6 +126,7 @@ p{
 .Name{
     position: absolute;
     top: 40%;
+    letter-spacing: 6px;
 }
 
 .hr1 {
@@ -175,4 +183,5 @@ p{
   animation-iteration-count: infinite;
   animation-delay: 2.6s;
 }
+
 

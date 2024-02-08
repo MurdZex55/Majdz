@@ -23,7 +23,7 @@ video {
 }
     
 #mainbox {
-    height: 70vh;
+    height: 80vh;
     width: 40vw;
     position: absolute;
     top: 50%;
@@ -184,4 +184,19 @@ p{
   animation-delay: 2.6s;
 }
 
+#mutebutton {
+  z-index: 4;
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  margin: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
 
+}
+#mutebutton img{
+  filter: invert(100%);
+  transition: all 3s ease;
+  opacity: 0%;
+}
